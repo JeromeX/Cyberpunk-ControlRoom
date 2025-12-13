@@ -1,0 +1,68 @@
+============================================================
+   CYBER CONTROL ROOM - TROUBLESHOOTING GUIDE
+============================================================
+
+ISSUE 1: "The site can't be reached" (Connection Refused)
+---------------------------------------------------------
+CAUSE: The service is not running or the firewall is blocking the port.
+SOLUTION:
+1. Check if the service is running:
+   # systemctl status controlroom.service
+   
+   If it says "active (running)", check the firewall.
+   
+2. Check Firewall:
+   # ufw status
+   Ensure Port 5000 is allowed. Command: "ufw allow 5000"
+
+3. Ensure you are using "http" (not https) and the correct port:
+   http://IP:5000
+
+
+ISSUE 2: Service shows "Failed" or "Error"
+---------------------------------------------------------
+CAUSE: Missing dependencies or file permission errors.
+SOLUTION:
+1. Read the error logs:
+   # journalctl -u controlroom.service -n 50 --no-pager
+
+2. Common Error: "ModuleNotFoundError: No module named 'xyz'"
+   -> You missed installing a library.
+   -> Run: 
+      cd /var/www/html/controlroom
+      source venv/bin/activate
+      pip install dnspython psutil ping3 flask cryptography mysql-connector-python flask-login
+      systemctl restart controlroom.service
+
+3. Common Error: "Permission denied"
+   -> The service must run as User=root in the .service file because 
+      network scanning (ICMP/Ping) requires root privileges.
+
+
+ISSUE 3: "Invalid License Key" or "Hardware Mismatch"
+---------------------------------------------------------
+CAUSE: The license key is bound to the specific server hardware.
+SOLUTION:
+If you moved the files to a new server or re-installed the OS, 
+the previous key will not work.
+-> Use the "REQUEST LICENSE" button again to generate a new key 
+   for the current hardware.
+
+
+ISSUE 4: Database Connection Failed (during Setup)
+---------------------------------------------------------
+CAUSE: Wrong username, password, or database name.
+SOLUTION:
+1. Test the connection manually in the terminal:
+   # mysql -u cyberuser -p
+2. Enter the password. If you can't login, reset the SQL user password.
+3. Ensure the database "controlroom" exists.
+
+
+ISSUE 5: Scanning does not find devices
+---------------------------------------------------------
+CAUSE: Incorrect CIDR or network segmentation.
+SOLUTION:
+1. In the Instance Settings, ensure the Network IP and CIDR are correct.
+   Example: 192.168.1.0 and /24 (for range 192.168.1.1 - 192.168.1.254).
+2. Ensure the server has a route to the target network.
