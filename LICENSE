@@ -1,0 +1,28 @@
+CYBER CONTROL ROOM - END USER LICENSE AGREEMENT (EULA)
+
+Copyright (c) 2025 Malte Speck
+All Rights Reserved.
+
+NOTICE TO USER:
+PLEASE READ THIS AGREEMENT CAREFULLY. BY COPYING, INSTALLING, OR USING ALL OR ANY PORTION OF THIS SOFTWARE, YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+
+1. PROPRIETARY & CONFIDENTIAL
+This software and its documentation are confidential and proprietary information of Malte Speck. You may not disclose such Proprietary Information and shall use it only in accordance with the terms of this agreement. The software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
+
+2. GRANT OF LICENSE
+Subject to the terms of this Agreement, Malte Speck grants you a limited, non-exclusive, non-transferable license to install and run the software "Cyber Control Room".
+This license is bound to the specific hardware instance ("Core ID") for which the activation key was generated. Transferring the installed software to another machine, virtual machine, or container without a new activation key is prohibited.
+
+3. RESTRICTIONS
+You may not, and you may not permit others to:
+   (a) Reverse engineer, decompile, disassemble, or derive source code from the encrypted components (.enc files) or the bootloader mechanisms.
+   (b) Bypass, disable, or defeat any security features, encryption, or license enforcement mechanisms (including the hardware lock) contained in the software.
+   (c) Modify, adapt, translate, or create derivative works based on the software.
+   (d) Rent, lease, lend, sell, redistribute, or sublicense the software.
+   (e) Remove or alter any proprietary notices, labels, or marks on the software.
+
+4. TERMINATION
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any of its terms. Upon termination, you must cease all use of the software and destroy all copies, full or partial, of the software.
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
