@@ -1,0 +1,106 @@
+============================================================
+   CYBER CONTROL ROOM - INSTALLATION MANUAL (SERVER)
+============================================================
+
+FILES PROVIDED:
+1. boot.py          (Loader Script)
+2. controlroom.enc  (Encrypted Application Core)
+
+------------------------------------------------------------
+STEP 1: SYSTEM PREPARATION
+------------------------------------------------------------
+Connect to your Linux server via SSH as 'root'.
+
+1. Update your system repositories:
+   # apt update && apt upgrade -y
+
+2. Install Python, pip, and Database Server:
+   # apt install python3-pip python3-venv mariadb-server ufw -y
+
+------------------------------------------------------------
+STEP 2: DATABASE SETUP
+------------------------------------------------------------
+You need to create a database for the system.
+
+1. Log into MySQL/MariaDB:
+   # mysql -u root
+
+2. Run the following SQL commands (replace 'your_password' with a secure password):
+
+   CREATE DATABASE controlroom;
+   CREATE USER 'cyberuser'@'localhost' IDENTIFIED BY 'your_password';
+   GRANT ALL PRIVILEGES ON controlroom.* TO 'cyberuser'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+
+------------------------------------------------------------
+STEP 3: INSTALLATION
+------------------------------------------------------------
+1. Create the application directory:
+   # mkdir -p /var/www/html/controlroom
+
+2. Upload the files 'boot.py' and 'controlroom.enc' to this directory.
+   (Use FileZilla, SCP, or WinSCP).
+
+3. Navigate to the folder:
+   # cd /var/www/html/controlroom
+
+4. Create a virtual environment:
+   # python3 -m venv venv
+
+5. Activate the environment:
+   # source venv/bin/activate
+
+6. Install required Python libraries:
+   (Copy and paste this exact command)
+   # pip install flask flask-login cryptography mysql-connector-python psutil ping3 dnspython
+
+------------------------------------------------------------
+STEP 4: SERVICE SETUP (AUTO-START)
+------------------------------------------------------------
+To make sure the Control Room starts automatically, create a system service.
+
+1. Create the service file:
+   # nano /etc/systemd/system/controlroom.service
+
+2. Paste the following content into the file:
+
+   [Unit]
+   Description=Cyber Control Room Service
+   After=network.target
+
+   [Service]
+   User=root
+   Group=root
+   WorkingDirectory=/var/www/html/controlroom
+   ExecStart=/var/www/html/controlroom/venv/bin/python /var/www/html/controlroom/boot.py
+   Restart=always
+   RestartSec=5
+
+   [Install]
+   WantedBy=multi-user.target
+
+3. Save and exit (CTRL+O, Enter, CTRL+X).
+
+4. Enable and start the service:
+   # systemctl daemon-reload
+   # systemctl enable controlroom.service
+   # systemctl start controlroom.service
+
+------------------------------------------------------------
+STEP 5: FIREWALL & ACTIVATION
+------------------------------------------------------------
+1. Open the Port 5000:
+   # ufw allow 5000
+
+2. Open your web browser and navigate to:
+   http://YOUR_SERVER_IP:5000
+
+3. You will see the "SYSTEM LOCKED" screen.
+   - Enter your Email Address to request a license key.
+   - You will receive an email with the Activation Link/Key.
+   - Once unlocked, enter the Database credentials you created in Step 2.
+
+============================================================
+INSTALLATION COMPLETE
+============================================================
