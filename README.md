@@ -3,6 +3,24 @@
 <img width="1920" height="1080" alt="2025-12-13 09_13_07-ACCESS CONTROL und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/25a11a5a-365f-4729-b9c1-c20e96c008ce" />
 <img width="1920" height="1080" alt="2025-12-13 09_14_31-CONTROL ROOM und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/fe504b70-2e78-4115-9185-77c73cbcc4d4" />
 
+## 💻 Tech Stack
+
+### Backend (The Core)
+* **Python 3.x**: The brain of the operation. Handles network scanning (ICMP), encryption, and business logic.
+* **Flask**: Micro-framework serving the API and rendering the UI templates.
+* **Cryptography (Fernet)**: Ensures AES-128 encryption for the core logic and configuration files.
+* **DNSPython**: Validates incoming license requests via MX record checks.
+
+### Frontend (The Visuals)
+* **HTML5 / Jinja2**: Dynamic templating for the dashboard.
+* **CSS3 (Custom Neon)**: Hand-crafted "Cyberpunk" styling with CSS variables, animations, and glow effects.
+* **JavaScript (ES6+)**: Handles asynchronous data fetching (AJAX), sorting algorithms, and live DOM updates without page reloads.
+* **Bootstrap 5**: Responsive layout grid and modal handling.
+
+### Data Persistence
+* **MySQL / MariaDB**: Stores devices, instances, and user configurations securely.
+* **SQLite**: High-performance logging system for system events.
+  
 > **Secure Network Monitoring & Management System**
 
 This repository contains the loader logic for the Cyber Control Room. The core application logic is protected and encrypted. This system provides real-time network scanning, device management, and visual monitoring in a cyberpunk aesthetic.
