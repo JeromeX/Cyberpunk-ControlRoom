@@ -1,0 +1,7 @@
+flask
+flask-login
+cryptography
+mysql-connector-python
+psutil
+ping3
+dnspython
