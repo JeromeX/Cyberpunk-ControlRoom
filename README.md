@@ -1,4 +1,7 @@
 # CYBER CONTROL ROOM
+
+<img width="876" height="671" alt="2025-12-13 23_48_18-iTop Screen Recorder" src="https://github.com/user-attachments/assets/80177f9b-61df-4eea-b5b9-e473c77bdd34" />
+<img width="1920" height="1080" alt="2025-12-14 00_03_25-GRANTED und 6 weitere Seiten - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/2259f689-e5a3-43dc-b085-e065219e8054" />
 <img width="1920" height="1080" alt="2025-12-13 09_12_31-SYSTEM INITIALIZATION und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/bd3a4999-0c9e-4463-adee-e7c74cddef06" />
 <img width="1920" height="1080" alt="2025-12-13 09_13_07-ACCESS CONTROL und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/25a11a5a-365f-4729-b9c1-c20e96c008ce" />
 <img width="1920" height="1080" alt="2025-12-13 09_14_31-CONTROL ROOM und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/fe504b70-2e78-4115-9185-77c73cbcc4d4" />
