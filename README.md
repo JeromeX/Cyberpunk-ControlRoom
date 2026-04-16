@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="2026-04-16 22_51_39-CONTROL ROOM" src="https://github.com/user-attachments/assets/2f4c91bc-a5c9-4442-961b-d3a0f2829701" />
 # CYBER CONTROL ROOM
 
 <img width="876" height="671" alt="2025-12-13 23_48_18-iTop Screen Recorder" src="https://github.com/user-attachments/assets/80177f9b-61df-4eea-b5b9-e473c77bdd34" />
@@ -5,7 +6,6 @@
 <img width="1920" height="1080" alt="2025-12-13 09_12_31-SYSTEM INITIALIZATION und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/bd3a4999-0c9e-4463-adee-e7c74cddef06" />
 <img width="1920" height="1080" alt="2025-12-13 09_13_07-ACCESS CONTROL und 1 weitere Seite - Maltex – Microsoft​ Edge" src="https://github.com/user-attachments/assets/25a11a5a-365f-4729-b9c1-c20e96c008ce" />
 <img width="1920" height="1080" alt="2025-12-17 09_40_09-CONTROL ROOM und 2 weitere Seiten - Malte – Microsoft​ Edge" src="https://github.com/user-attachments/assets/38d7a1dd-6234-4d75-ac6c-fa47a55b7543" />
-
 
 ## 💻 Tech Stack
 
